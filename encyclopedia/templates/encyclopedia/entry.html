@@ -12,4 +12,6 @@
     {% else %}
     <p>The requested page was not found.</p>
     {% endif %}
+
+    <a href="{% url 'edit' title=title %}" class="btn btn-secondary">Edit Page</a>
 {% endblock %}
