@@ -1,8 +1,17 @@
 from django.shortcuts import render, redirect
 from django.http import Http404
 import random
+import markdown2
 
 from . import util
+
+import markdown2
+
+def convert_markdown_to_html(markdown_content):
+
+    html_content = markdown2.markdown(markdown_content)
+    return html_content
+
 
 
 def index(request):
